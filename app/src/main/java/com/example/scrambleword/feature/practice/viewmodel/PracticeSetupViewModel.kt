@@ -1,11 +1,11 @@
 package com.example.scrambleword.feature.practice.viewmodel
 
-import android.R.attr.category
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.scrambleword.domain.model.Language
-import com.example.scrambleword.domain.model.PracticeConfig
-import com.example.scrambleword.domain.model.PracticeMode
+import com.example.scrambleword.domain.model.practice.PracticeConfig
+import com.example.scrambleword.domain.model.practice.PracticeDifficulty
+import com.example.scrambleword.domain.model.practice.PracticeMode
 import com.example.scrambleword.domain.usecase.practice.ObserveCategoryCountsUseCase
 import com.example.scrambleword.domain.usecase.practice.ObserveWordCountUseCase
 import com.example.scrambleword.feature.practice.state.PracticeSetupUiState
@@ -26,6 +26,7 @@ class PracticeSetupViewModel @Inject constructor(
 ) : ViewModel() {
     private val selectedLanguage = MutableStateFlow(Language.ENGLISH)
     private val selectedCategory = MutableStateFlow<String?>(null)
+    private val selectedDifficulty = MutableStateFlow(PracticeDifficulty.NORMAL)
 
     @OptIn(ExperimentalCoroutinesApi::class)
     val uiState: StateFlow<PracticeSetupUiState> =
@@ -36,15 +37,17 @@ class PracticeSetupViewModel @Inject constructor(
                 observeWordCount(language, null),
                 selectedCategory.flatMapLatest { cat ->
                     observeWordCount(language, cat)
-                }
-            ) { category, counts, total, selectedCount ->
+                },
+                selectedDifficulty
+            ) { category, counts, total, selectedCount,selectedDifficulty ->
                 PracticeSetupUiState(
                     selectedLanguage = language,
                     selectedCategory = category,
                     categoryCounts = counts,
                     totalCount = total,
                     selectedCount = selectedCount,
-                    canStart = selectedCount > 0
+                    canStart = selectedCount > 0,
+                    selectedDifficulty = selectedDifficulty
                 )
             }
         }.stateIn(
@@ -52,7 +55,6 @@ class PracticeSetupViewModel @Inject constructor(
             started = SharingStarted.WhileSubscribed(5_000),
             initialValue = PracticeSetupUiState()
         )
-
 
 
     fun onLanguageSelected(language: Language) {
@@ -69,13 +71,15 @@ class PracticeSetupViewModel @Inject constructor(
         return PracticeConfig(
             language = state.selectedLanguage,
             category = state.selectedCategory,
-            mode = PracticeMode.SPELLING
+            mode = PracticeMode.SPELLING,
+            wordCount = 10,
+            difficulty = state.selectedDifficulty
         )
     }
 
-
-
-
+    fun onDifficultySelected(value: PracticeDifficulty) {
+        selectedDifficulty.value = value
+    }
 
 
 }

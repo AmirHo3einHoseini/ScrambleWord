@@ -2,6 +2,9 @@ package com.example.scrambleword.di.remote
 
 import com.example.scrambleword.data.remote.api.FreeDictionaryApi
 import com.example.scrambleword.data.remote.api.WiktApi
+import com.example.scrambleword.data.remote.exercise.ExerciseApi
+import com.example.scrambleword.data.remote.exercise.LocalJsonExerciseApi
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -74,6 +77,8 @@ object NetWorkModule {
     ): WiktApi {
         return retrofit.create(WiktApi::class.java)
     }
+
+
 
 
 }

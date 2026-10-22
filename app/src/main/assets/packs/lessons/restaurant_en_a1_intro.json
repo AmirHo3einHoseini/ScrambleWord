@@ -1,0 +1,79 @@
+{
+  "id": "lesson-restaurant-en-a1-intro",
+  "scenario": "restaurant",
+  "language": "en",
+  "level": "A1",
+  "title_fa": "رستوران · شروع",
+  "title_en": "Restaurant · Getting started",
+  "description_fa": "چند جملهٔ پرکاربرد برای ورود، سفارش و پرداخت — اول ببین، بعد تمرین کن.",
+  "description_en": "Essential phrases for arriving, ordering, and paying.",
+  "version": "v0.1",
+  "step_count": 5,
+  "steps": [
+    {
+      "id": "step-01-table",
+      "order": 1,
+      "sentence_id": "rest-en-a1-002",
+      "learn_text": "Hello. A table for two, please.",
+      "translation_fa": "سلام. لطفاً یک میز برای دو نفر.",
+      "tip_fa": "برای درخواست مؤدبانه اغلب از please در انتهای جمله استفاده می‌شود.",
+      "tip_en": "Use please at the end to sound polite.",
+      "focus_lemma": "table",
+      "focus_surface": "table",
+      "grammar_focus": "polite request with please",
+      "practice_mode": "FILL_BLANK"
+    },
+    {
+      "id": "step-02-menu",
+      "order": 2,
+      "sentence_id": "rest-en-a1-004",
+      "learn_text": "Can we have the menu, please?",
+      "translation_fa": "می‌توانیم منو را داشته باشیم، لطفاً؟",
+      "tip_fa": "Can we have …؟ یک الگوی رایج برای درخواست مؤدبانه است.",
+      "tip_en": "Can we have …? is a common polite request pattern.",
+      "focus_lemma": "menu",
+      "focus_surface": "menu",
+      "grammar_focus": "can for requests",
+      "practice_mode": "FILL_BLANK"
+    },
+    {
+      "id": "step-03-order",
+      "order": 3,
+      "sentence_id": "rest-en-a1-010",
+      "learn_text": "I'd like the chicken, please.",
+      "translation_fa": "لطفاً مرغ را می‌خواهم.",
+      "tip_fa": "I'd like … یعنی I would like … و برای سفارش مؤدبانه به کار می‌رود.",
+      "tip_en": "I'd like … means I would like … — polite way to order.",
+      "focus_lemma": "chicken",
+      "focus_surface": "chicken",
+      "grammar_focus": "would like",
+      "practice_mode": "FILL_BLANK"
+    },
+    {
+      "id": "step-04-bill",
+      "order": 4,
+      "sentence_id": "rest-en-a1-013",
+      "learn_text": "Can we have the bill, please?",
+      "translation_fa": "لطفاً می‌توانیم صورت‌حساب را داشته باشیم؟",
+      "tip_fa": "bill یعنی صورت‌حساب. همان الگوی Can we have … اینجا برای گرفتن صورتحساب است.",
+      "tip_en": "bill = the check. Same Can we have … pattern.",
+      "focus_lemma": "bill",
+      "focus_surface": "bill",
+      "grammar_focus": "can for requests",
+      "practice_mode": "FILL_BLANK"
+    },
+    {
+      "id": "step-05-pay",
+      "order": 5,
+      "sentence_id": "rest-en-a1-015",
+      "learn_text": "Can I pay by card?",
+      "translation_fa": "می‌توانم با کارت پرداخت کنم؟",
+      "tip_fa": "Can I …؟ برای اجازه یا امکان انجام کار است. by card یعنی با کارت.",
+      "tip_en": "Can I …? asks for permission/possibility. by card = with a card.",
+      "focus_lemma": "card",
+      "focus_surface": "card",
+      "grammar_focus": "can for permission",
+      "practice_mode": "FILL_BLANK"
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 package com.example.scrambleword.feature.practice.state
 
-import com.example.scrambleword.domain.model.CubeLetter
-import com.example.scrambleword.domain.model.PracticeSlot
+import com.example.scrambleword.domain.model.practice.CubeLetter
+import com.example.scrambleword.domain.model.practice.PracticeDifficulty
+import com.example.scrambleword.domain.model.practice.PracticeSlot
 
 data class PracticePlayUiState(
     val isLoading: Boolean = true,
@@ -16,5 +17,15 @@ data class PracticePlayUiState(
     val cubes: List<CubeLetter> = emptyList(),
     val slots: List<PracticeSlot> = emptyList(),
     val isCompleted: Boolean = false,
-    val isSessionFinished: Boolean = false
+    val isSessionFinished: Boolean = false,
+    val difficulty: PracticeDifficulty = PracticeDifficulty.NORMAL,
+    val sessionScore: Int = 0,
+    val lastWordPoints: Int? = null,
+    val perfectCount: Int = 0,
+    val perfectStreak: Int = 0,
+    val showHint: Boolean = false,
+    val hintButtonVisible: Boolean = false,
+    val canUseHint: Boolean = false,
+    val wordMistakeCount: Int = 0,
+    val wordUsedHint: Boolean = false
 )

@@ -1,8 +1,8 @@
 package com.example.scrambleword.domain.usecase.practice
 
-import com.example.scrambleword.domain.model.PracticeConfig
-import com.example.scrambleword.domain.model.PracticeQuestion
-import com.example.scrambleword.domain.model.toPracticeQuestion
+import com.example.scrambleword.domain.model.practice.PracticeConfig
+import com.example.scrambleword.domain.model.practice.PracticeQuestion
+import com.example.scrambleword.domain.model.practice.toPracticeQuestion
 import javax.inject.Inject
 
 class BuildPracticeSessionUseCase @Inject constructor(

@@ -1,4 +1,6 @@
-package com.example.scrambleword.domain.model
+package com.example.scrambleword.domain.model.practice
+
+import com.example.scrambleword.domain.model.Word
 
 data class PracticeQuestion(
     val word: Word,

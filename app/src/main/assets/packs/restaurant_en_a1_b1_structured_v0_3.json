@@ -1,0 +1,2756 @@
+[
+  {
+    "id": "rest-en-a1-001",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 1,
+    "step_name": "Arriving",
+    "speaker": "Staff",
+    "function": "greeting",
+    "text": "Hello! Welcome to our restaurant.",
+    "translation_fa": "سلام! به رستوران ما خوش آمدید.",
+    "next_id": "rest-en-a1-002",
+    "vocab_mentions": [
+      {
+        "surface": "Welcome",
+        "lemma": "welcome",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "restaurant",
+        "lemma": "restaurant",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "imperative",
+        "category": "Sentence Structure",
+        "is_primary_target": true,
+        "evidence_text": "Welcome to our restaurant."
+      },
+      {
+        "concept_name": "present simple",
+        "category": "Tense",
+        "is_primary_target": false,
+        "evidence_text": "Welcome to our restaurant."
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-002",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 1,
+    "step_name": "Arriving",
+    "speaker": "Customer",
+    "function": "request_table",
+    "text": "Hello. A table for two, please.",
+    "translation_fa": "سلام. لطفاً یک میز برای دو نفر.",
+    "next_id": "rest-en-a1-003",
+    "vocab_mentions": [
+      {
+        "surface": "table",
+        "lemma": "table",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "two",
+        "lemma": "two",
+        "language": "en",
+        "pos": "number",
+        "grammatical_role": "quantity",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "polite request with please",
+        "category": "Function / Politeness",
+        "is_primary_target": true,
+        "evidence_text": "please"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-003",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 1,
+    "step_name": "Arriving",
+    "speaker": "Staff",
+    "function": "seating",
+    "text": "Sure. Please follow me.",
+    "translation_fa": "حتماً. لطفاً دنبال من بیایید.",
+    "next_id": "rest-en-a1-004",
+    "vocab_mentions": [
+      {
+        "surface": "follow",
+        "lemma": "follow",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "imperative",
+        "category": "Sentence Structure",
+        "is_primary_target": true,
+        "evidence_text": "Please follow me."
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-004",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 2,
+    "step_name": "Getting the menu",
+    "speaker": "Customer",
+    "function": "request_menu",
+    "text": "Can we have the menu, please?",
+    "translation_fa": "می‌توانیم منو را داشته باشیم، لطفاً؟",
+    "next_id": "rest-en-a1-005",
+    "vocab_mentions": [
+      {
+        "surface": "menu",
+        "lemma": "menu",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "can for requests",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "Can we have"
+      },
+      {
+        "concept_name": "polite request with please",
+        "category": "Function / Politeness",
+        "is_primary_target": false,
+        "evidence_text": "please"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-005",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 2,
+    "step_name": "Getting the menu",
+    "speaker": "Staff",
+    "function": "offer_help",
+    "text": "Of course. Here are the menus.",
+    "translation_fa": "حتماً. این هم منوها.",
+    "next_id": "rest-en-a1-006",
+    "vocab_mentions": [
+      {
+        "surface": "Of course",
+        "lemma": "of course",
+        "language": "en",
+        "pos": "phrase",
+        "grammatical_role": "discourse_marker",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "menus",
+        "lemma": "menu",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "here / there construction",
+        "category": "Demonstrative / Existential",
+        "is_primary_target": true,
+        "evidence_text": "Here are the menus."
+      },
+      {
+        "concept_name": "plural noun",
+        "category": "Noun Morphology",
+        "is_primary_target": false,
+        "evidence_text": "menus"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-006",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 3,
+    "step_name": "Asking about food",
+    "speaker": "Customer",
+    "function": "ask_food",
+    "text": "What is this dish?",
+    "translation_fa": "این غذا چیست؟",
+    "next_id": "rest-en-a1-007",
+    "vocab_mentions": [
+      {
+        "surface": "dish",
+        "lemma": "dish",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "what question",
+        "category": "Question",
+        "is_primary_target": true,
+        "evidence_text": "What is"
+      },
+      {
+        "concept_name": "demonstrative this",
+        "category": "Determiner / Demonstrative",
+        "is_primary_target": false,
+        "evidence_text": "this dish"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-007",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 3,
+    "step_name": "Asking about food",
+    "speaker": "Staff",
+    "function": "describe_food",
+    "text": "It is chicken with rice and vegetables.",
+    "translation_fa": "این مرغ با برنج و سبزیجات است.",
+    "next_id": "rest-en-a1-008",
+    "vocab_mentions": [
+      {
+        "surface": "chicken",
+        "lemma": "chicken",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "rice",
+        "lemma": "rice",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "vegetables",
+        "lemma": "vegetable",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "present simple",
+        "category": "Tense",
+        "is_primary_target": true,
+        "evidence_text": "It is chicken"
+      },
+      {
+        "concept_name": "with + noun",
+        "category": "Preposition",
+        "is_primary_target": false,
+        "evidence_text": "with rice and vegetables"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-008",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 3,
+    "step_name": "Asking about food",
+    "speaker": "Customer",
+    "function": "ask_preference",
+    "text": "Is it spicy?",
+    "translation_fa": "تند است؟",
+    "next_id": "rest-en-a1-009",
+    "vocab_mentions": [
+      {
+        "surface": "spicy",
+        "lemma": "spicy",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "be + adjective",
+        "category": "Copular Construction",
+        "is_primary_target": true,
+        "evidence_text": "Is it spicy?"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-009",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 3,
+    "step_name": "Asking about food",
+    "speaker": "Staff",
+    "function": "answer_question",
+    "text": "No, it is not very spicy.",
+    "translation_fa": "نه، خیلی تند نیست.",
+    "next_id": "rest-en-a1-010",
+    "vocab_mentions": [
+      {
+        "surface": "spicy",
+        "lemma": "spicy",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "very",
+        "lemma": "very",
+        "language": "en",
+        "pos": "adverb",
+        "grammatical_role": "modifier",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "negative be",
+        "category": "Negation",
+        "is_primary_target": true,
+        "evidence_text": "is not"
+      },
+      {
+        "concept_name": "degree adverb very",
+        "category": "Degree",
+        "is_primary_target": false,
+        "evidence_text": "very spicy"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-010",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 4,
+    "step_name": "Ordering",
+    "speaker": "Customer",
+    "function": "order_food",
+    "text": "I'd like the chicken, please.",
+    "translation_fa": "لطفاً مرغ را می‌خواهم.",
+    "next_id": "rest-en-a1-011",
+    "vocab_mentions": [
+      {
+        "surface": "I'd like",
+        "lemma": "would like",
+        "language": "en",
+        "pos": "phrase",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "chicken",
+        "lemma": "chicken",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "would like",
+        "category": "Politeness / Modality",
+        "is_primary_target": true,
+        "evidence_text": "I'd like"
+      },
+      {
+        "concept_name": "polite request with please",
+        "category": "Function / Politeness",
+        "is_primary_target": false,
+        "evidence_text": "please"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-011",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 4,
+    "step_name": "Ordering",
+    "speaker": "Customer",
+    "function": "order_drink",
+    "text": "And I'd like a glass of water.",
+    "translation_fa": "و یک لیوان آب هم می‌خواهم.",
+    "next_id": "rest-en-a1-012",
+    "vocab_mentions": [
+      {
+        "surface": "I'd like",
+        "lemma": "would like",
+        "language": "en",
+        "pos": "phrase",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "glass",
+        "lemma": "glass",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "quantity_unit",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "water",
+        "lemma": "water",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "would like",
+        "category": "Politeness / Modality",
+        "is_primary_target": true,
+        "evidence_text": "I'd like"
+      },
+      {
+        "concept_name": "of + noun",
+        "category": "Preposition",
+        "is_primary_target": false,
+        "evidence_text": "of water"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-012",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 4,
+    "step_name": "Ordering",
+    "speaker": "Staff",
+    "function": "confirm_order",
+    "text": "Okay. One chicken and one water.",
+    "translation_fa": "باشه. یک مرغ و یک آب.",
+    "next_id": "rest-en-a1-013",
+    "vocab_mentions": [
+      {
+        "surface": "One",
+        "lemma": "one",
+        "language": "en",
+        "pos": "number",
+        "grammatical_role": "quantity",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "chicken",
+        "lemma": "chicken",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      },
+      {
+        "surface": "water",
+        "lemma": "water",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "counting / quantity",
+        "category": "Determiners / Numbers",
+        "is_primary_target": true,
+        "evidence_text": "One chicken and one water."
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-013",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 5,
+    "step_name": "Paying",
+    "speaker": "Customer",
+    "function": "request_bill",
+    "text": "Can we have the bill, please?",
+    "translation_fa": "لطفاً می‌توانیم صورت‌حساب را داشته باشیم؟",
+    "next_id": "rest-en-a1-014",
+    "vocab_mentions": [
+      {
+        "surface": "bill",
+        "lemma": "bill",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "can for requests",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "Can we have"
+      },
+      {
+        "concept_name": "polite request with please",
+        "category": "Function / Politeness",
+        "is_primary_target": false,
+        "evidence_text": "please"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-014",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 5,
+    "step_name": "Paying",
+    "speaker": "Staff",
+    "function": "give_bill",
+    "text": "Sure. Here is your bill.",
+    "translation_fa": "حتماً. این هم صورت‌حساب شما.",
+    "next_id": "rest-en-a1-015",
+    "vocab_mentions": [
+      {
+        "surface": "bill",
+        "lemma": "bill",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "possessive determiner",
+        "category": "Possession",
+        "is_primary_target": true,
+        "evidence_text": "your bill"
+      },
+      {
+        "concept_name": "here / there construction",
+        "category": "Demonstrative / Existential",
+        "is_primary_target": false,
+        "evidence_text": "Here is your bill."
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-015",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 5,
+    "step_name": "Paying",
+    "speaker": "Customer",
+    "function": "ask_payment",
+    "text": "Can I pay by card?",
+    "translation_fa": "می‌توانم با کارت پرداخت کنم؟",
+    "next_id": "rest-en-a1-016",
+    "vocab_mentions": [
+      {
+        "surface": "pay",
+        "lemma": "pay",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "card",
+        "lemma": "card",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "can for permission",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "Can I pay"
+      },
+      {
+        "concept_name": "by + noun",
+        "category": "Preposition",
+        "is_primary_target": false,
+        "evidence_text": "by card"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a1-016",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A1",
+    "step": 5,
+    "step_name": "Paying",
+    "speaker": "Staff",
+    "function": "answer_payment",
+    "text": "Yes, you can pay by card.",
+    "translation_fa": "بله، می‌توانید با کارت پرداخت کنید.",
+    "next_id": null,
+    "vocab_mentions": [
+      {
+        "surface": "pay",
+        "lemma": "pay",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "card",
+        "lemma": "card",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "can for permission",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "you can pay"
+      },
+      {
+        "concept_name": "by + noun",
+        "category": "Preposition",
+        "is_primary_target": false,
+        "evidence_text": "by card"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-001",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 1,
+    "step_name": "Arriving",
+    "speaker": "Customer",
+    "function": "reservation",
+    "text": "Hi, I have a reservation for two people tonight.",
+    "translation_fa": "سلام، من برای امشب برای دو نفر رزرو دارم.",
+    "next_id": "rest-en-a2-002",
+    "vocab_mentions": [
+      {
+        "surface": "reservation",
+        "lemma": "reservation",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "tonight",
+        "lemma": "tonight",
+        "language": "en",
+        "pos": "adverb",
+        "grammatical_role": "time_expression",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "people",
+        "lemma": "person",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "present simple",
+        "category": "Tense",
+        "is_primary_target": true,
+        "evidence_text": "I have a reservation"
+      },
+      {
+        "concept_name": "time expression",
+        "category": "Adverbial",
+        "is_primary_target": false,
+        "evidence_text": "tonight"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-002",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 1,
+    "step_name": "Arriving",
+    "speaker": "Staff",
+    "function": "check_reservation",
+    "text": "Sure. Can I have your name, please?",
+    "translation_fa": "حتماً. می‌توانم اسمتان را داشته باشم، لطفاً؟",
+    "next_id": "rest-en-a2-003",
+    "vocab_mentions": [
+      {
+        "surface": "name",
+        "lemma": "name",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "can for requests",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "Can I have"
+      },
+      {
+        "concept_name": "polite request with please",
+        "category": "Function / Politeness",
+        "is_primary_target": false,
+        "evidence_text": "please"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-003",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 1,
+    "step_name": "Arriving",
+    "speaker": "Customer",
+    "function": "give_information",
+    "text": "It is under Amir, and we booked a table for seven.",
+    "translation_fa": "به نام امیر است و ما یک میز برای ساعت هفت رزرو کرده‌ایم.",
+    "next_id": "rest-en-a2-004",
+    "vocab_mentions": [
+      {
+        "surface": "booked",
+        "lemma": "book",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "table",
+        "lemma": "table",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "seven",
+        "lemma": "seven",
+        "language": "en",
+        "pos": "number",
+        "grammatical_role": "time_expression",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "past simple",
+        "category": "Tense",
+        "is_primary_target": true,
+        "evidence_text": "we booked a table"
+      },
+      {
+        "concept_name": "under + name",
+        "category": "Preposition",
+        "is_primary_target": false,
+        "evidence_text": "under Amir"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-004",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 1,
+    "step_name": "Arriving",
+    "speaker": "Staff",
+    "function": "seat_customer",
+    "text": "Yes, I found it. Your table is ready by the window.",
+    "translation_fa": "بله، پیدایش کردم. میز شما کنار پنجره آماده است.",
+    "next_id": "rest-en-a2-005",
+    "vocab_mentions": [
+      {
+        "surface": "ready",
+        "lemma": "ready",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "window",
+        "lemma": "window",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "found",
+        "lemma": "find",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "past simple",
+        "category": "Tense",
+        "is_primary_target": true,
+        "evidence_text": "I found it"
+      },
+      {
+        "concept_name": "possessive determiner",
+        "category": "Possession",
+        "is_primary_target": false,
+        "evidence_text": "Your table"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-005",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 2,
+    "step_name": "Menu",
+    "speaker": "Customer",
+    "function": "request_menu",
+    "text": "Could we have two menus and the drinks menu as well?",
+    "translation_fa": "می‌شود دو منو و منوی نوشیدنی‌ها را هم بیاورید؟",
+    "next_id": "rest-en-a2-006",
+    "vocab_mentions": [
+      {
+        "surface": "menus",
+        "lemma": "menu",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "drinks menu",
+        "lemma": "drinks menu",
+        "language": "en",
+        "pos": "noun_phrase",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "as well",
+        "lemma": "as well",
+        "language": "en",
+        "pos": "phrase",
+        "grammatical_role": "discourse_marker",
+        "cefr_estimate": "A2",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "could for polite requests",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "Could we have"
+      },
+      {
+        "concept_name": "as well",
+        "category": "Additive",
+        "is_primary_target": false,
+        "evidence_text": "as well"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-006",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 3,
+    "step_name": "Asking about food",
+    "speaker": "Customer",
+    "function": "ask_recommendation",
+    "text": "What would you recommend for someone who likes spicy food?",
+    "translation_fa": "برای کسی که غذای تند دوست دارد چه چیزی را پیشنهاد می‌کنید؟",
+    "next_id": "rest-en-a2-007",
+    "vocab_mentions": [
+      {
+        "surface": "recommend",
+        "lemma": "recommend",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "spicy food",
+        "lemma": "spicy food",
+        "language": "en",
+        "pos": "noun_phrase",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "would recommend",
+        "category": "Modality / Advice",
+        "is_primary_target": true,
+        "evidence_text": "What would you recommend"
+      },
+      {
+        "concept_name": "relative clause",
+        "category": "Clause Structure",
+        "is_primary_target": false,
+        "evidence_text": "someone who likes spicy food"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-007",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 3,
+    "step_name": "Asking about food",
+    "speaker": "Staff",
+    "function": "recommend",
+    "text": "I would recommend the spicy chicken with rice.",
+    "translation_fa": "من مرغ تند با برنج را پیشنهاد می‌کنم.",
+    "next_id": "rest-en-a2-008",
+    "vocab_mentions": [
+      {
+        "surface": "recommend",
+        "lemma": "recommend",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "spicy",
+        "lemma": "spicy",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "modifier",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "chicken",
+        "lemma": "chicken",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "would recommend",
+        "category": "Modality / Advice",
+        "is_primary_target": true,
+        "evidence_text": "I would recommend"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-008",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 3,
+    "step_name": "Asking about food",
+    "speaker": "Customer",
+    "function": "ask_ingredients",
+    "text": "Does it contain any nuts or dairy products?",
+    "translation_fa": "آیا حاوی آجیل یا محصولات لبنی است؟",
+    "next_id": "rest-en-a2-009",
+    "vocab_mentions": [
+      {
+        "surface": "contain",
+        "lemma": "contain",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "nuts",
+        "lemma": "nut",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "dairy products",
+        "lemma": "dairy product",
+        "language": "en",
+        "pos": "noun_phrase",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "does + verb question",
+        "category": "Question",
+        "is_primary_target": true,
+        "evidence_text": "Does it contain"
+      },
+      {
+        "concept_name": "any",
+        "category": "Determiner",
+        "is_primary_target": false,
+        "evidence_text": "any nuts"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-009",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 3,
+    "step_name": "Asking about food",
+    "speaker": "Staff",
+    "function": "answer_ingredients",
+    "text": "It contains milk, but there are no nuts in it.",
+    "translation_fa": "حاوی شیر است، اما آجیل ندارد.",
+    "next_id": "rest-en-a2-010",
+    "vocab_mentions": [
+      {
+        "surface": "contains",
+        "lemma": "contain",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "milk",
+        "lemma": "milk",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "nuts",
+        "lemma": "nut",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "present simple",
+        "category": "Tense",
+        "is_primary_target": true,
+        "evidence_text": "It contains milk"
+      },
+      {
+        "concept_name": "there are",
+        "category": "Existential",
+        "is_primary_target": false,
+        "evidence_text": "there are no nuts"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-010",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 4,
+    "step_name": "Ordering",
+    "speaker": "Customer",
+    "function": "order",
+    "text": "I'll have the chicken, but could you make it less spicy?",
+    "translation_fa": "من مرغ را می‌خواهم، اما می‌شود آن را کمتر تند کنید؟",
+    "next_id": "rest-en-a2-011",
+    "vocab_mentions": [
+      {
+        "surface": "less spicy",
+        "lemma": "less spicy",
+        "language": "en",
+        "pos": "phrase",
+        "grammatical_role": "object_complement",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "make",
+        "lemma": "make",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "chicken",
+        "lemma": "chicken",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "will for decisions",
+        "category": "Future / Intention",
+        "is_primary_target": true,
+        "evidence_text": "I'll have"
+      },
+      {
+        "concept_name": "could for polite requests",
+        "category": "Modality",
+        "is_primary_target": false,
+        "evidence_text": "could you make"
+      },
+      {
+        "concept_name": "comparative less",
+        "category": "Comparison",
+        "is_primary_target": false,
+        "evidence_text": "less spicy"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-011",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 4,
+    "step_name": "Ordering",
+    "speaker": "Staff",
+    "function": "confirm_special_request",
+    "text": "Of course. I'll ask the kitchen to make it less spicy.",
+    "translation_fa": "حتماً. از آشپزخانه می‌خواهم آن را کمتر تند درست کنند.",
+    "next_id": "rest-en-a2-012",
+    "vocab_mentions": [
+      {
+        "surface": "kitchen",
+        "lemma": "kitchen",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "less spicy",
+        "lemma": "less spicy",
+        "language": "en",
+        "pos": "phrase",
+        "grammatical_role": "object_complement",
+        "cefr_estimate": "A2",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "will for decisions",
+        "category": "Future / Intention",
+        "is_primary_target": true,
+        "evidence_text": "I'll ask"
+      },
+      {
+        "concept_name": "ask + object + to-infinitive",
+        "category": "Verb Pattern",
+        "is_primary_target": false,
+        "evidence_text": "ask the kitchen to make"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-012",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 5,
+    "step_name": "Problem",
+    "speaker": "Customer",
+    "function": "report_problem",
+    "text": "Excuse me, I ordered soup, but I got a salad.",
+    "translation_fa": "ببخشید، من سوپ سفارش داده بودم، اما سالاد آورده‌اند.",
+    "next_id": "rest-en-a2-013",
+    "vocab_mentions": [
+      {
+        "surface": "ordered",
+        "lemma": "order",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "soup",
+        "lemma": "soup",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "salad",
+        "lemma": "salad",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "past simple",
+        "category": "Tense",
+        "is_primary_target": true,
+        "evidence_text": "I ordered soup"
+      },
+      {
+        "concept_name": "contrast with but",
+        "category": "Conjunction",
+        "is_primary_target": false,
+        "evidence_text": "but I got a salad"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-013",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 5,
+    "step_name": "Problem",
+    "speaker": "Staff",
+    "function": "apologize",
+    "text": "I'm sorry about that. I'll bring your soup right away.",
+    "translation_fa": "متأسفم بابت این موضوع. همین الان سوپ شما را می‌آورم.",
+    "next_id": "rest-en-a2-014",
+    "vocab_mentions": [
+      {
+        "surface": "sorry",
+        "lemma": "sorry",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "right away",
+        "lemma": "right away",
+        "language": "en",
+        "pos": "phrase",
+        "grammatical_role": "time_expression",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "soup",
+        "lemma": "soup",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "will for immediate decision",
+        "category": "Future / Intention",
+        "is_primary_target": true,
+        "evidence_text": "I'll bring"
+      },
+      {
+        "concept_name": "apology",
+        "category": "Function / Politeness",
+        "is_primary_target": false,
+        "evidence_text": "I'm sorry about that"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-014",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 6,
+    "step_name": "Paying",
+    "speaker": "Customer",
+    "function": "request_bill",
+    "text": "Could we have the bill when you have a moment?",
+    "translation_fa": "وقتی فرصت داشتید می‌شود صورت‌حساب را بیاورید؟",
+    "next_id": "rest-en-a2-015",
+    "vocab_mentions": [
+      {
+        "surface": "bill",
+        "lemma": "bill",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "moment",
+        "lemma": "moment",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "could for polite requests",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "Could we have"
+      },
+      {
+        "concept_name": "when clause",
+        "category": "Clause Structure",
+        "is_primary_target": false,
+        "evidence_text": "when you have a moment"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-015",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 6,
+    "step_name": "Paying",
+    "speaker": "Customer",
+    "function": "split_bill",
+    "text": "Could we pay separately, please?",
+    "translation_fa": "می‌شود جداگانه پرداخت کنیم، لطفاً؟",
+    "next_id": "rest-en-a2-016",
+    "vocab_mentions": [
+      {
+        "surface": "pay",
+        "lemma": "pay",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A1",
+        "is_target": true
+      },
+      {
+        "surface": "separately",
+        "lemma": "separately",
+        "language": "en",
+        "pos": "adverb",
+        "grammatical_role": "manner_modifier",
+        "cefr_estimate": "A2",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "could for polite requests",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "Could we pay"
+      },
+      {
+        "concept_name": "polite request with please",
+        "category": "Function / Politeness",
+        "is_primary_target": false,
+        "evidence_text": "please"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-a2-016",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "A2",
+    "step": 6,
+    "step_name": "Paying",
+    "speaker": "Staff",
+    "function": "close_visit",
+    "text": "Certainly. Thank you for coming, and have a nice evening.",
+    "translation_fa": "حتماً. ممنون که آمدید و عصر خوبی داشته باشید.",
+    "next_id": null,
+    "vocab_mentions": [
+      {
+        "surface": "Certainly",
+        "lemma": "certainly",
+        "language": "en",
+        "pos": "adverb",
+        "grammatical_role": "discourse_marker",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "evening",
+        "lemma": "evening",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "imperative",
+        "category": "Sentence Structure",
+        "is_primary_target": true,
+        "evidence_text": "have a nice evening"
+      },
+      {
+        "concept_name": "thank you for + -ing",
+        "category": "Verb Pattern",
+        "is_primary_target": false,
+        "evidence_text": "Thank you for coming"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-001",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 1,
+    "step_name": "Arriving",
+    "speaker": "Customer",
+    "function": "reservation",
+    "text": "Good evening. We have a reservation under the name Amir for three people.",
+    "translation_fa": "عصر بخیر. ما برای سه نفر به نام امیر رزرو داریم.",
+    "next_id": "rest-en-b1-002",
+    "vocab_mentions": [
+      {
+        "surface": "reservation",
+        "lemma": "reservation",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "under the name",
+        "lemma": "under the name",
+        "language": "en",
+        "pos": "phrase",
+        "grammatical_role": "prepositional",
+        "cefr_estimate": "B1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "present simple",
+        "category": "Tense",
+        "is_primary_target": true,
+        "evidence_text": "We have a reservation"
+      },
+      {
+        "concept_name": "reservation phrase",
+        "category": "Fixed Expression",
+        "is_primary_target": false,
+        "evidence_text": "reservation under the name"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-002",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 1,
+    "step_name": "Arriving",
+    "speaker": "Staff",
+    "function": "offer_seating",
+    "text": "Certainly. Your table is ready, although it is slightly smaller than the one you requested.",
+    "translation_fa": "حتماً. میز شما آماده است، اگرچه کمی کوچک‌تر از میزی است که درخواست کرده بودید.",
+    "next_id": "rest-en-b1-003",
+    "vocab_mentions": [
+      {
+        "surface": "although",
+        "lemma": "although",
+        "language": "en",
+        "pos": "conjunction",
+        "grammatical_role": "subordinator",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "slightly",
+        "lemma": "slightly",
+        "language": "en",
+        "pos": "adverb",
+        "grammatical_role": "modifier",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "requested",
+        "lemma": "request",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "B1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "although",
+        "category": "Clause Structure",
+        "is_primary_target": true,
+        "evidence_text": "although it is slightly smaller"
+      },
+      {
+        "concept_name": "comparative",
+        "category": "Comparison",
+        "is_primary_target": false,
+        "evidence_text": "smaller than the one"
+      },
+      {
+        "concept_name": "relative clause",
+        "category": "Clause Structure",
+        "is_primary_target": false,
+        "evidence_text": "the one you requested"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-003",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 2,
+    "step_name": "Menu",
+    "speaker": "Customer",
+    "function": "ask_recommendation",
+    "text": "Before we order, could you recommend something that is popular with local customers?",
+    "translation_fa": "قبل از اینکه سفارش بدهیم، می‌توانید چیزی را پیشنهاد کنید که بین مشتریان محلی محبوب باشد؟",
+    "next_id": "rest-en-b1-004",
+    "vocab_mentions": [
+      {
+        "surface": "recommend",
+        "lemma": "recommend",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "popular",
+        "lemma": "popular",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "local customers",
+        "lemma": "local customer",
+        "language": "en",
+        "pos": "noun_phrase",
+        "grammatical_role": "object",
+        "cefr_estimate": "B1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "before clause",
+        "category": "Clause Structure",
+        "is_primary_target": true,
+        "evidence_text": "Before we order"
+      },
+      {
+        "concept_name": "could for polite requests",
+        "category": "Modality",
+        "is_primary_target": false,
+        "evidence_text": "could you recommend"
+      },
+      {
+        "concept_name": "relative clause",
+        "category": "Clause Structure",
+        "is_primary_target": false,
+        "evidence_text": "something that is popular"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-004",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 2,
+    "step_name": "Menu",
+    "speaker": "Staff",
+    "function": "recommend",
+    "text": "If you enjoy seafood, the grilled fish is one of our most popular dishes.",
+    "translation_fa": "اگر غذای دریایی دوست دارید، ماهی کبابی یکی از محبوب‌ترین غذاهای ماست.",
+    "next_id": "rest-en-b1-005",
+    "vocab_mentions": [
+      {
+        "surface": "seafood",
+        "lemma": "seafood",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "grilled",
+        "lemma": "grill",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "modifier",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "popular",
+        "lemma": "popular",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "modifier",
+        "cefr_estimate": "A2",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "if clause",
+        "category": "Clause Structure",
+        "is_primary_target": true,
+        "evidence_text": "If you enjoy seafood"
+      },
+      {
+        "concept_name": "superlative",
+        "category": "Comparison",
+        "is_primary_target": false,
+        "evidence_text": "most popular dishes"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-005",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 3,
+    "step_name": "Dietary needs",
+    "speaker": "Customer",
+    "function": "explain_restriction",
+    "text": "That sounds good, but I need to avoid dairy because I'm lactose intolerant.",
+    "translation_fa": "خوب به نظر می‌رسد، اما باید از لبنیات پرهیز کنم چون عدم تحمل لاکتوز دارم.",
+    "next_id": "rest-en-b1-006",
+    "vocab_mentions": [
+      {
+        "surface": "avoid",
+        "lemma": "avoid",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "dairy",
+        "lemma": "dairy",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "lactose intolerant",
+        "lemma": "lactose intolerant",
+        "language": "en",
+        "pos": "adjective_phrase",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "B1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "need to",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "I need to avoid"
+      },
+      {
+        "concept_name": "because clause",
+        "category": "Clause Structure",
+        "is_primary_target": false,
+        "evidence_text": "because I'm lactose intolerant"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-006",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 3,
+    "step_name": "Dietary needs",
+    "speaker": "Staff",
+    "function": "check_ingredients",
+    "text": "No problem. Let me check with the kitchen whether the fish is served with a dairy-based sauce.",
+    "translation_fa": "مشکلی نیست. اجازه بدهید از آشپزخانه بپرسم که آیا ماهی با سس لبنی سرو می‌شود یا نه.",
+    "next_id": "rest-en-b1-007",
+    "vocab_mentions": [
+      {
+        "surface": "kitchen",
+        "lemma": "kitchen",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "dairy-based",
+        "lemma": "dairy-based",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "modifier",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "sauce",
+        "lemma": "sauce",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "B1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "let me + verb",
+        "category": "Causative / Discourse",
+        "is_primary_target": true,
+        "evidence_text": "Let me check"
+      },
+      {
+        "concept_name": "whether clause",
+        "category": "Clause Structure",
+        "is_primary_target": false,
+        "evidence_text": "whether the fish is served"
+      },
+      {
+        "concept_name": "passive voice",
+        "category": "Voice",
+        "is_primary_target": false,
+        "evidence_text": "is served"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-007",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 3,
+    "step_name": "Dietary needs",
+    "speaker": "Staff",
+    "function": "give_information",
+    "text": "The fish itself is dairy-free, but the usual sauce contains butter.",
+    "translation_fa": "خود ماهی بدون لبنیات است، اما سس معمول آن کره دارد.",
+    "next_id": "rest-en-b1-008",
+    "vocab_mentions": [
+      {
+        "surface": "itself",
+        "lemma": "itself",
+        "language": "en",
+        "pos": "pronoun",
+        "grammatical_role": "intensifier",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "dairy-free",
+        "lemma": "dairy-free",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "usual",
+        "lemma": "usual",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "modifier",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "contains",
+        "lemma": "contain",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": false
+      },
+      {
+        "surface": "butter",
+        "lemma": "butter",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "emphatic pronoun itself",
+        "category": "Pronoun",
+        "is_primary_target": true,
+        "evidence_text": "The fish itself"
+      },
+      {
+        "concept_name": "contrast with but",
+        "category": "Conjunction",
+        "is_primary_target": false,
+        "evidence_text": "but the usual sauce"
+      },
+      {
+        "concept_name": "present simple",
+        "category": "Tense",
+        "is_primary_target": false,
+        "evidence_text": "contains butter"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-008",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 3,
+    "step_name": "Dietary needs",
+    "speaker": "Customer",
+    "function": "request_modification",
+    "text": "In that case, could I have it without the sauce and with some vegetables instead?",
+    "translation_fa": "در این صورت، می‌شود آن را بدون سس و به‌جای آن با مقداری سبزیجات داشته باشم؟",
+    "next_id": "rest-en-b1-009",
+    "vocab_mentions": [
+      {
+        "surface": "without",
+        "lemma": "without",
+        "language": "en",
+        "pos": "preposition",
+        "grammatical_role": "preposition",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "instead",
+        "lemma": "instead",
+        "language": "en",
+        "pos": "adverb",
+        "grammatical_role": "contrast_marker",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "vegetables",
+        "lemma": "vegetable",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      },
+      {
+        "surface": "sauce",
+        "lemma": "sauce",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "B1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "in that case",
+        "category": "Discourse Marker",
+        "is_primary_target": true,
+        "evidence_text": "In that case"
+      },
+      {
+        "concept_name": "could for polite requests",
+        "category": "Modality",
+        "is_primary_target": false,
+        "evidence_text": "could I have"
+      },
+      {
+        "concept_name": "without + noun",
+        "category": "Preposition",
+        "is_primary_target": false,
+        "evidence_text": "without the sauce"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-009",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 4,
+    "step_name": "Ordering",
+    "speaker": "Customer",
+    "function": "order",
+    "text": "I'll have the grilled fish, and my friend would like the chicken with a side salad.",
+    "translation_fa": "من ماهی کبابی می‌خواهم و دوستم مرغ با سالاد کنار غذا می‌خواهد.",
+    "next_id": "rest-en-b1-010",
+    "vocab_mentions": [
+      {
+        "surface": "grilled fish",
+        "lemma": "grilled fish",
+        "language": "en",
+        "pos": "noun_phrase",
+        "grammatical_role": "object",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "side salad",
+        "lemma": "side salad",
+        "language": "en",
+        "pos": "noun_phrase",
+        "grammatical_role": "object",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "would like",
+        "lemma": "would like",
+        "language": "en",
+        "pos": "phrase",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "A2",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "will for decisions",
+        "category": "Future / Intention",
+        "is_primary_target": true,
+        "evidence_text": "I'll have"
+      },
+      {
+        "concept_name": "would like",
+        "category": "Politeness / Modality",
+        "is_primary_target": false,
+        "evidence_text": "would like the chicken"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-010",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 4,
+    "step_name": "Ordering",
+    "speaker": "Staff",
+    "function": "confirm_order",
+    "text": "Certainly. I'll make a note that your fish should be served without the sauce.",
+    "translation_fa": "حتماً. یادداشت می‌کنم که ماهی شما باید بدون سس سرو شود.",
+    "next_id": "rest-en-b1-011",
+    "vocab_mentions": [
+      {
+        "surface": "make a note",
+        "lemma": "make a note",
+        "language": "en",
+        "pos": "verb_phrase",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "served",
+        "lemma": "serve",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "passive_predicate",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "without",
+        "lemma": "without",
+        "language": "en",
+        "pos": "preposition",
+        "grammatical_role": "preposition",
+        "cefr_estimate": "B1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "make a note that",
+        "category": "Fixed Expression",
+        "is_primary_target": true,
+        "evidence_text": "I'll make a note that"
+      },
+      {
+        "concept_name": "should + passive",
+        "category": "Modality / Voice",
+        "is_primary_target": false,
+        "evidence_text": "should be served"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-011",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 5,
+    "step_name": "During meal",
+    "speaker": "Customer",
+    "function": "request_assistance",
+    "text": "Excuse me, could we have some extra bread and two more glasses of water?",
+    "translation_fa": "ببخشید، می‌شود کمی نان اضافه و دو لیوان آب دیگر بیاورید؟",
+    "next_id": "rest-en-b1-012",
+    "vocab_mentions": [
+      {
+        "surface": "extra",
+        "lemma": "extra",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "modifier",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "more",
+        "lemma": "more",
+        "language": "en",
+        "pos": "determiner",
+        "grammatical_role": "quantity_modifier",
+        "cefr_estimate": "A2",
+        "is_target": true
+      },
+      {
+        "surface": "bread",
+        "lemma": "bread",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      },
+      {
+        "surface": "water",
+        "lemma": "water",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "could for polite requests",
+        "category": "Modality",
+        "is_primary_target": true,
+        "evidence_text": "could we have"
+      },
+      {
+        "concept_name": "some + noun",
+        "category": "Determiner",
+        "is_primary_target": false,
+        "evidence_text": "some extra bread"
+      },
+      {
+        "concept_name": "more + noun",
+        "category": "Quantity",
+        "is_primary_target": false,
+        "evidence_text": "two more glasses"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-012",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 5,
+    "step_name": "Problem",
+    "speaker": "Customer",
+    "function": "complaint_politely",
+    "text": "I'm sorry to mention this, but my friend's chicken is not cooked properly.",
+    "translation_fa": "ببخشید که این را مطرح می‌کنم، اما مرغ دوستم به‌درستی پخته نشده است.",
+    "next_id": "rest-en-b1-013",
+    "vocab_mentions": [
+      {
+        "surface": "mention",
+        "lemma": "mention",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "properly",
+        "lemma": "properly",
+        "language": "en",
+        "pos": "adverb",
+        "grammatical_role": "manner_modifier",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "cooked",
+        "lemma": "cook",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "passive_predicate",
+        "cefr_estimate": "B1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "present passive",
+        "category": "Voice",
+        "is_primary_target": true,
+        "evidence_text": "is not cooked"
+      },
+      {
+        "concept_name": "polite complaint framing",
+        "category": "Pragmatics / Function",
+        "is_primary_target": false,
+        "evidence_text": "I'm sorry to mention this"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-013",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 5,
+    "step_name": "Problem",
+    "speaker": "Staff",
+    "function": "resolve_problem",
+    "text": "I'm very sorry about that. I'll have the kitchen prepare a new dish for you immediately.",
+    "translation_fa": "خیلی متأسفم بابت این موضوع. از آشپزخانه می‌خواهم فوراً یک غذای جدید برای شما آماده کنند.",
+    "next_id": "rest-en-b1-014",
+    "vocab_mentions": [
+      {
+        "surface": "prepare",
+        "lemma": "prepare",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "predicate",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "immediately",
+        "lemma": "immediately",
+        "language": "en",
+        "pos": "adverb",
+        "grammatical_role": "time_modifier",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "kitchen",
+        "lemma": "kitchen",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A2",
+        "is_target": false
+      },
+      {
+        "surface": "dish",
+        "lemma": "dish",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "have + object + bare infinitive",
+        "category": "Causative",
+        "is_primary_target": true,
+        "evidence_text": "have the kitchen prepare"
+      },
+      {
+        "concept_name": "will for immediate action",
+        "category": "Future / Intention",
+        "is_primary_target": false,
+        "evidence_text": "I'll have the kitchen"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-014",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 6,
+    "step_name": "Paying",
+    "speaker": "Customer",
+    "function": "request_bill",
+    "text": "Everything was delicious, and we are ready for the bill whenever you have a chance.",
+    "translation_fa": "همه‌چیز خوشمزه بود و هر وقت فرصت داشتید ما آماده دریافت صورت‌حساب هستیم.",
+    "next_id": "rest-en-b1-015",
+    "vocab_mentions": [
+      {
+        "surface": "delicious",
+        "lemma": "delicious",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "whenever",
+        "lemma": "whenever",
+        "language": "en",
+        "pos": "conjunction",
+        "grammatical_role": "subordinator",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "chance",
+        "lemma": "chance",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "bill",
+        "lemma": "bill",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "object",
+        "cefr_estimate": "A1",
+        "is_target": false
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "past simple",
+        "category": "Tense",
+        "is_primary_target": true,
+        "evidence_text": "Everything was delicious"
+      },
+      {
+        "concept_name": "whenever clause",
+        "category": "Clause Structure",
+        "is_primary_target": false,
+        "evidence_text": "whenever you have a chance"
+      },
+      {
+        "concept_name": "be ready for",
+        "category": "Fixed Expression",
+        "is_primary_target": false,
+        "evidence_text": "we are ready for the bill"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-015",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 6,
+    "step_name": "Paying",
+    "speaker": "Customer",
+    "function": "ask_service_charge",
+    "text": "Could you also tell me whether the service charge is already included?",
+    "translation_fa": "همچنین می‌توانید بگویید آیا هزینه خدمات از قبل حساب شده است؟",
+    "next_id": "rest-en-b1-016",
+    "vocab_mentions": [
+      {
+        "surface": "service charge",
+        "lemma": "service charge",
+        "language": "en",
+        "pos": "noun_phrase",
+        "grammatical_role": "subject",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "included",
+        "lemma": "include",
+        "language": "en",
+        "pos": "verb",
+        "grammatical_role": "passive_predicate",
+        "cefr_estimate": "B1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "whether clause",
+        "category": "Clause Structure",
+        "is_primary_target": true,
+        "evidence_text": "whether the service charge is already included"
+      },
+      {
+        "concept_name": "passive voice",
+        "category": "Voice",
+        "is_primary_target": false,
+        "evidence_text": "is already included"
+      },
+      {
+        "concept_name": "already",
+        "category": "Adverb",
+        "is_primary_target": false,
+        "evidence_text": "already included"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  },
+  {
+    "id": "rest-en-b1-016",
+    "scenario": "restaurant",
+    "language": "en",
+    "level": "B1",
+    "step": 6,
+    "step_name": "Paying",
+    "speaker": "Staff",
+    "function": "close_visit",
+    "text": "Yes, the service charge is included, but the tip is completely optional.",
+    "translation_fa": "بله، هزینه خدمات حساب شده است، اما انعام کاملاً اختیاری است.",
+    "next_id": null,
+    "vocab_mentions": [
+      {
+        "surface": "service charge",
+        "lemma": "service charge",
+        "language": "en",
+        "pos": "noun_phrase",
+        "grammatical_role": "subject",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "tip",
+        "lemma": "tip",
+        "language": "en",
+        "pos": "noun",
+        "grammatical_role": "subject",
+        "cefr_estimate": "B1",
+        "is_target": true
+      },
+      {
+        "surface": "optional",
+        "lemma": "optional",
+        "language": "en",
+        "pos": "adjective",
+        "grammatical_role": "subject_complement",
+        "cefr_estimate": "B1",
+        "is_target": true
+      }
+    ],
+    "grammar_mentions": [
+      {
+        "concept_name": "passive voice",
+        "category": "Voice",
+        "is_primary_target": true,
+        "evidence_text": "is included"
+      },
+      {
+        "concept_name": "contrast with but",
+        "category": "Conjunction",
+        "is_primary_target": false,
+        "evidence_text": "but the tip is"
+      }
+    ],
+    "validation_status": "human_reviewed",
+    "dataset_version": "v0.3",
+    "source_type": "original_curated",
+    "level_status": "pedagogical_estimate",
+    "license_note": "Original dataset text generated for this project; review before commercial publication."
+  }
+]

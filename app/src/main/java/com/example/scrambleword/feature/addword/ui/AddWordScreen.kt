@@ -88,6 +88,14 @@ import com.example.scrambleword.core.ui.theme.WordScrambleTheme
 import com.example.scrambleword.core.ui.theme.spacing
 import com.example.scrambleword.domain.model.Language
 import com.example.scrambleword.feature.addword.state.AddWordUiState
+import com.example.scrambleword.feature.addword.ui.AddWordContent
+import com.example.scrambleword.feature.addword.ui.AddWordField
+import com.example.scrambleword.feature.addword.ui.LanguageSelector
+import com.example.scrambleword.feature.addword.ui.MoreDetailsCard
+import com.example.scrambleword.feature.addword.ui.SectionTitle
+import com.example.scrambleword.feature.addword.ui.SelectedGlow
+import com.example.scrambleword.feature.addword.ui.categories
+import com.example.scrambleword.feature.addword.ui.fieldColors
 import com.example.scrambleword.feature.addword.viewModel.AddWordViewModel
 
 
@@ -216,7 +224,7 @@ fun AddWordContent(
                         contentPadding = PaddingValues()
                     ) {
                         Box(
-                            modifier = Modifier
+                            modifier =Modifier
                                 .fillMaxSize()
                                 .background(
                                     brush = Brush.horizontalGradient(

@@ -1,6 +1,6 @@
 package com.example.scrambleword.domain.usecase.practice
 
-import com.example.scrambleword.domain.model.PracticeConfig
+import com.example.scrambleword.domain.model.practice.PracticeConfig
 import com.example.scrambleword.domain.model.Word
 import com.example.scrambleword.domain.repository.WordRepository
 import javax.inject.Inject

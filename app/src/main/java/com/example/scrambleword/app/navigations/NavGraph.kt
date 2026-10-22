@@ -1,4 +1,3 @@
-
 package com.example.scrambleword.app.navigations
 
 import androidx.compose.runtime.Composable
@@ -11,12 +10,14 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
+import com.example.scrambleword.domain.model.practice.PracticeDifficulty
 import com.example.scrambleword.feature.addword.ui.AddWordScreen
 import com.example.scrambleword.feature.addword.ui.DictionaryScreen
 import com.example.scrambleword.feature.addword.viewModel.AddWordViewModel
 import com.example.scrambleword.feature.home.ui.HomeScreen
+import com.example.scrambleword.feature.lesson.LessonScreen
+import com.example.scrambleword.feature.practice.ui.FillBlankScreen
 import com.example.scrambleword.feature.practice.ui.PracticePlayScreen
-import com.example.scrambleword.feature.practice.ui.PracticeSetupContent
 import com.example.scrambleword.feature.practice.ui.PracticeSetupScreen
 import com.example.scrambleword.feature.wordlist.ui.WordListScreen
 
@@ -173,7 +174,24 @@ fun AppNavGraph(
                     navController.navigate(
                         Routes.practicePlay(
                             language = config.language.code,
-                            category = config.category
+                            category = config.category,
+                            difficulty = config.difficulty.name
+                        )
+                    )
+                },
+                onFill = { config ->
+                    navController.navigate(
+                        Routes.fillBlank(
+                            level = "A1",
+                            difficulty = config.difficulty.name
+                        )
+                    )
+                },
+                lesson = {
+                    navController.navigate(
+                        Routes.lesson(
+                            lessonId = "restaurant_en_a1_intro",
+                            difficulty = PracticeDifficulty.EASY
                         )
                     )
                 }
@@ -187,6 +205,10 @@ fun AppNavGraph(
                 navArgument("category") {
                     type = NavType.StringType
                     defaultValue = ""
+                },
+                navArgument("difficulty") {
+                    type = NavType.StringType
+                    defaultValue = PracticeDifficulty.NORMAL.name
                 }
             )
         ) {
@@ -194,7 +216,41 @@ fun AppNavGraph(
                 onBack = { navController.popBackStack() }
             )
         }
+        composable(
+            Routes.FILL_BLANK,
+            arguments = listOf(
+                navArgument("level") {
+                    type = NavType.StringType
+                    defaultValue = "A1"
+                },
+                navArgument("difficulty") {
+                    type = NavType.StringType
+                    defaultValue = PracticeDifficulty.EASY.name
+                }
+            )
+        ) {
+            FillBlankScreen(onBack = { navController.popBackStack() })
+        }
+
+        composable(
+            route = Routes.LESSON,
+            arguments = listOf(
+                navArgument("lessonId") {
+                    type = NavType.StringType
+                    defaultValue = "restaurant_en_a1_intro"
+                },
+                navArgument("difficulty") {
+                    type = NavType.StringType
+                    defaultValue = PracticeDifficulty.EASY.name
+                }
+            )
+        ) {
+            LessonScreen(
+                onBack = { navController.popBackStack() }
+            )
+        }
 
     }
+
 
 }

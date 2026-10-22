@@ -1,0 +1,428 @@
+{
+  "menu": [
+    "bill",
+    "order",
+    "table",
+    "card"
+  ],
+  "bill": [
+    "menu",
+    "card",
+    "order",
+    "pay"
+  ],
+  "table": [
+    "menu",
+    "bill",
+    "reservation",
+    "window"
+  ],
+  "order": [
+    "menu",
+    "bill",
+    "ask",
+    "pay"
+  ],
+  "book": [
+    "order",
+    "reservation",
+    "table",
+    "ask"
+  ],
+  "chicken": [
+    "rice",
+    "salad",
+    "soup",
+    "fish"
+  ],
+  "water": [
+    "glass",
+    "menu",
+    "rice",
+    "bill"
+  ],
+  "card": [
+    "bill",
+    "menu",
+    "pay",
+    "name"
+  ],
+  "pay": [
+    "bill",
+    "card",
+    "order",
+    "tip"
+  ],
+  "spicy": [
+    "salad",
+    "chicken",
+    "rice",
+    "soup"
+  ],
+  "dish": [
+    "menu",
+    "chicken",
+    "salad",
+    "soup"
+  ],
+  "restaurant": [
+    "menu",
+    "table",
+    "bill",
+    "reservation"
+  ],
+  "welcome": [
+    "please",
+    "follow",
+    "certainly",
+    "ready"
+  ],
+  "follow": [
+    "please",
+    "welcome",
+    "ready",
+    "come"
+  ],
+  "glass": [
+    "water",
+    "bill",
+    "menu",
+    "card"
+  ],
+  "rice": [
+    "chicken",
+    "salad",
+    "soup",
+    "bread"
+  ],
+  "salad": [
+    "soup",
+    "chicken",
+    "rice",
+    "bread"
+  ],
+  "soup": [
+    "salad",
+    "rice",
+    "chicken",
+    "bread"
+  ],
+  "reservation": [
+    "table",
+    "name",
+    "bill",
+    "menu"
+  ],
+  "recommend": [
+    "order",
+    "menu",
+    "prefer",
+    "like"
+  ],
+  "separately": [
+    "bill",
+    "card",
+    "please",
+    "together"
+  ],
+  "two": [
+    "one",
+    "three",
+    "four",
+    "please"
+  ],
+  "one": [
+    "two",
+    "three",
+    "four",
+    "menu"
+  ],
+  "name": [
+    "bill",
+    "card",
+    "table",
+    "menu"
+  ],
+  "tonight": [
+    "evening",
+    "reservation",
+    "table",
+    "ready"
+  ],
+  "evening": [
+    "tonight",
+    "reservation",
+    "please",
+    "certainly"
+  ],
+  "window": [
+    "table",
+    "ready",
+    "reservation",
+    "menu"
+  ],
+  "ready": [
+    "table",
+    "window",
+    "please",
+    "certainly"
+  ],
+  "kitchen": [
+    "menu",
+    "order",
+    "chicken",
+    "sauce"
+  ],
+  "sauce": [
+    "soup",
+    "salad",
+    "chicken",
+    "butter"
+  ],
+  "butter": [
+    "sauce",
+    "milk",
+    "bread",
+    "rice"
+  ],
+  "milk": [
+    "butter",
+    "water",
+    "sauce",
+    "soup"
+  ],
+  "nuts": [
+    "milk",
+    "dairy",
+    "salad",
+    "sauce"
+  ],
+  "dairy": [
+    "milk",
+    "butter",
+    "nuts",
+    "sauce"
+  ],
+  "contain": [
+    "order",
+    "serve",
+    "include",
+    "ask"
+  ],
+  "include": [
+    "contain",
+    "bill",
+    "service charge",
+    "tip"
+  ],
+  "tip": [
+    "bill",
+    "card",
+    "optional",
+    "pay"
+  ],
+  "optional": [
+    "tip",
+    "bill",
+    "included",
+    "certainly"
+  ],
+  "delicious": [
+    "spicy",
+    "salad",
+    "chicken",
+    "ready"
+  ],
+  "immediately": [
+    "right away",
+    "please",
+    "ready",
+    "follow"
+  ],
+  "right away": [
+    "immediately",
+    "please",
+    "ready",
+    "follow"
+  ],
+  "moment": [
+    "bill",
+    "please",
+    "evening",
+    "chance"
+  ],
+  "chance": [
+    "moment",
+    "bill",
+    "please",
+    "evening"
+  ],
+  "extra": [
+    "more",
+    "bread",
+    "water",
+    "salad"
+  ],
+  "more": [
+    "extra",
+    "two",
+    "water",
+    "bread"
+  ],
+  "bread": [
+    "rice",
+    "salad",
+    "soup",
+    "butter"
+  ],
+  "fish": [
+    "chicken",
+    "salad",
+    "rice",
+    "soup"
+  ],
+  "seafood": [
+    "fish",
+    "chicken",
+    "salad",
+    "rice"
+  ],
+  "popular": [
+    "recommend",
+    "menu",
+    "delicious",
+    "special"
+  ],
+  "avoid": [
+    "order",
+    "dairy",
+    "spicy",
+    "nuts"
+  ],
+  "without": [
+    "with",
+    "sauce",
+    "extra",
+    "instead"
+  ],
+  "instead": [
+    "without",
+    "extra",
+    "salad",
+    "sauce"
+  ],
+  "properly": [
+    "cooked",
+    "immediately",
+    "ready",
+    "sorry"
+  ],
+  "cooked": [
+    "properly",
+    "chicken",
+    "soup",
+    "ready"
+  ],
+  "prepare": [
+    "order",
+    "kitchen",
+    "cook",
+    "serve"
+  ],
+  "serve": [
+    "order",
+    "prepare",
+    "kitchen",
+    "bill"
+  ],
+  "mention": [
+    "sorry",
+    "order",
+    "problem",
+    "ask"
+  ],
+  "sorry": [
+    "please",
+    "certainly",
+    "mention",
+    "ready"
+  ],
+  "certainly": [
+    "please",
+    "of course",
+    "sure",
+    "ready"
+  ],
+  "of course": [
+    "certainly",
+    "please",
+    "sure",
+    "ready"
+  ],
+  "please": [
+    "certainly",
+    "sorry",
+    "thanks",
+    "ready"
+  ],
+  "would like": [
+    "order",
+    "have",
+    "want",
+    "recommend"
+  ],
+  "service charge": [
+    "tip",
+    "bill",
+    "optional",
+    "included"
+  ],
+  "side salad": [
+    "salad",
+    "soup",
+    "rice",
+    "bread"
+  ],
+  "grilled fish": [
+    "chicken",
+    "salad",
+    "soup",
+    "rice"
+  ],
+  "drinks menu": [
+    "menu",
+    "bill",
+    "water",
+    "card"
+  ],
+  "as well": [
+    "also",
+    "extra",
+    "more",
+    "please"
+  ],
+  "less spicy": [
+    "spicy",
+    "salad",
+    "chicken",
+    "soup"
+  ],
+  "very": [
+    "really",
+    "quite",
+    "spicy",
+    "sorry"
+  ],
+  "vegetables": [
+    "salad",
+    "rice",
+    "chicken",
+    "soup"
+  ],
+  "vegetable": [
+    "salad",
+    "rice",
+    "chicken",
+    "soup"
+  ]
+}

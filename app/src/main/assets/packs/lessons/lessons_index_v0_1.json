@@ -1,0 +1,15 @@
+{
+  "lessons": [
+    {
+      "id": "lesson-restaurant-en-a1-intro",
+      "scenario": "restaurant",
+      "language": "en",
+      "level": "A1",
+      "title_fa": "رستوران · شروع",
+      "title_en": "Restaurant · Getting started",
+      "description_fa": "چند جملهٔ پرکاربرد برای ورود، سفارش و پرداخت — اول ببین، بعد تمرین کن.",
+      "step_count": 5,
+      "version": "v0.1"
+    }
+  ]
+}

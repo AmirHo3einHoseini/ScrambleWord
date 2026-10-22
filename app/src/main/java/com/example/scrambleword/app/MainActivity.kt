@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() {
             WordScrambleTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
 
-                    AppNavGraph(navController = navController)
+                    MainShell(navController = navController)
                 }
             }
         }

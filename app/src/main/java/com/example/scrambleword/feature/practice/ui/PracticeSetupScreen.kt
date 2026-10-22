@@ -1,6 +1,5 @@
 package com.example.scrambleword.feature.practice.ui
 
-import android.util.Log.i
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -24,7 +23,6 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.PlayArrow
-import androidx.compose.material.icons.filled.Policy
 import androidx.compose.material.icons.outlined.Edit
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -34,17 +32,16 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilterChip
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -55,9 +52,11 @@ import androidx.compose.ui.unit.LayoutDirection
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.example.scrambleword.app.navigations.Routes
 import com.example.scrambleword.core.ui.theme.WordScrambleTheme
 import com.example.scrambleword.domain.model.Language
-import com.example.scrambleword.domain.model.PracticeConfig
+import com.example.scrambleword.domain.model.practice.PracticeConfig
+import com.example.scrambleword.domain.model.practice.PracticeDifficulty
 import com.example.scrambleword.feature.practice.state.PracticeSetupUiState
 import com.example.scrambleword.feature.practice.viewmodel.PracticeSetupViewModel
 
@@ -65,6 +64,9 @@ import com.example.scrambleword.feature.practice.viewmodel.PracticeSetupViewMode
 fun PracticeSetupScreen(
     onBack: () -> Unit,
     onStart: (PracticeConfig) -> Unit,
+    onFill: (PracticeConfig) -> Unit,
+    lesson: () -> Unit,
+
     viewModel: PracticeSetupViewModel = hiltViewModel()
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
@@ -80,7 +82,10 @@ fun PracticeSetupScreen(
                 onStart(viewModel.currentConfig())
 
             }
-        }
+        },
+        onDifficulty = viewModel::onDifficultySelected,
+        onFill = { onFill(viewModel.currentConfig()) },
+        lesson = lesson
     )
 }
 
@@ -91,7 +96,10 @@ fun PracticeSetupContent(
     onBack: () -> Unit,
     onLanguageSelected: (Language) -> Unit,
     onCategorySelected: (String?) -> Unit,
-    onStartClick: () -> Unit
+    onStartClick: () -> Unit,
+    onDifficulty: (PracticeDifficulty) -> Unit,
+    onFill: () -> Unit,
+    lesson: () -> Unit
 ) {
     Scaffold(
         containerColor = MaterialTheme.colorScheme.background,
@@ -288,6 +296,39 @@ fun PracticeSetupContent(
                     )
                 }
             }
+            Button(onClick = onFill) {
+                Text("تست Fill-Blank API")
+            }
+
+
+            Text("سطح سختی", style = MaterialTheme.typography.titleSmall)
+            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                DifficultyCheap(
+                    "آسان",
+                    PracticeDifficulty.EASY,
+                    uiState.selectedDifficulty,
+                    onDifficulty
+                )
+                DifficultyCheap(
+                    "عادی",
+                    PracticeDifficulty.NORMAL,
+                    uiState.selectedDifficulty,
+                    onDifficulty
+                )
+                DifficultyCheap(
+                    "سخت",
+                    PracticeDifficulty.HARD,
+                    uiState.selectedDifficulty,
+                    onDifficulty
+                )
+            }
+
+            TextButton(
+                onClick = lesson
+
+            ) {
+                Text("تست درس رستوران (موقت)")
+            }
         }
     }
 }
@@ -354,6 +395,20 @@ private fun CategoryCard(
     }
 }
 
+@Composable
+private fun DifficultyCheap(
+    label: String,
+    value: PracticeDifficulty,
+    selected: PracticeDifficulty,
+    onSelected: (PracticeDifficulty) -> Unit
+) {
+    FilterChip(
+        selected = selected == value,
+        onClick = { onSelected(value) },
+        label = { Text(label) }
+    )
+
+}
 
 @Preview(showBackground = true, locale = "fa")
 @Composable
@@ -365,7 +420,9 @@ fun previewPcticeSetup() {
                 onBack = {},
                 onLanguageSelected = {},
                 onCategorySelected = {},
-                onStartClick = {}
+                onStartClick = {},
+                onDifficulty = {},
+                onFill = {},{}
             )
         }
     }

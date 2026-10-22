@@ -1,4 +1,4 @@
-package com.example.scrambleword.domain.model
+package com.example.scrambleword.domain.model.practice
 
 data class PracticeSlot(
     val index: Int,
