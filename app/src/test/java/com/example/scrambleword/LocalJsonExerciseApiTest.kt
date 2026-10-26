@@ -119,6 +119,23 @@ class LocalJsonExerciseApiTest {
             assertFalse("Different-CEFR vocabulary must not be used as a fallback distractor", options.any { it.equals("restaurant", ignoreCase = true) })
         }
     }
+    @Test
+    fun generatedExercisesHaveUniqueIds() = runBlocking {
+        val exercises = createApi(
+            confusablesJson = """{"tea":["coffee","water","juice"]}""",
+            extraTargetMentions = """
+                  ,
+                  {"surface":"tea","lemma":"tea","language":"en","pos":"noun","cefr_estimate":"A1","is_target":true}
+            """.trimIndent()
+        ).getFillBlank(level = "A1", limit = 20, difficulty = PracticeDifficulty.EASY)
+
+        assertTrue(exercises.isNotEmpty())
+        assertEquals(
+            "Every generated exercise must have a unique ID",
+            exercises.size,
+            exercises.map { it.exerciseId }.distinct().size
+        )
+    }
     private fun createApi(confusablesJson: String, extraTargetMentions: String = ""): LocalJsonExerciseApi {
         val context = mockk<Context>()
         val assets = mockk<AssetManager>()
