@@ -48,7 +48,7 @@ class LocalJsonExerciseApi @Inject constructor(
             .flatMap { s ->
                 val mentions = s.vocabMentions.orEmpty()
                 mentions
-                    .filter { it.surface.length >= 2 }
+                    .filter { it.isTarget && it.surface.length >= 2 }
                     .mapNotNull { m -> toFillBlank(s, m, mode) }
             }
             .shuffled(Random.Default)
