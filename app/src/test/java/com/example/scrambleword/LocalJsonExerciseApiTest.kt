@@ -8,7 +8,6 @@ import com.example.scrambleword.domain.model.practice.PracticeDifficulty
 import com.google.gson.Gson
 import io.mockk.every
 import io.mockk.mockk
-import java.io.ByteArrayInputStream
 import java.nio.charset.StandardCharsets
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
@@ -19,6 +18,70 @@ class LocalJsonExerciseApiTest {
 
     @Test
     fun getFillBlankOnlyCreatesExercisesForTargetVocabulary() = runBlocking {
+        val exercises = createApi(
+            confusablesJson = """{"tea":["coffee","water","juice"]}"""
+        ).getFillBlank(
+            level = "A1",
+            limit = 20,
+            difficulty = PracticeDifficulty.EASY
+        )
+
+        assertTrue(exercises.isNotEmpty())
+        assertEquals(setOf("tea"), exercises.map { it.answer }.toSet())
+        assertTrue(exercises.all { it.mode == FillBlankMode.CHOICE })
+    }
+
+    @Test
+    fun choiceOptionsContainCorrectAnswerExactlyOnceWithoutDuplicates() = runBlocking {
+        val exercises = createApi(
+            confusablesJson = """{"tea":["coffee","water","juice"]}"""
+        ).getFillBlank(
+            level = "A1",
+            limit = 20,
+            difficulty = PracticeDifficulty.EASY
+        )
+
+        assertTrue(exercises.isNotEmpty())
+        exercises.forEach { exercise ->
+            val options = requireNotNull(exercise.options)
+            assertTrue(
+                "Correct answer must be present among options",
+                options.any { it.equals(exercise.answer, ignoreCase = true) }
+            )
+            assertEquals(
+                "Correct answer must appear exactly once",
+                1,
+                options.count { it.equals(exercise.answer, ignoreCase = true) }
+            )
+            assertEquals(
+                "Options must not contain case-insensitive duplicates",
+                options.size,
+                options.distinctBy { it.trim().lowercase() }.size
+            )
+        }
+    }
+
+    @Test
+    fun choiceOptionsHaveFourOptionsWhenEnoughConfusablesExist() = runBlocking {
+        val exercises = createApi(
+            confusablesJson = """{"tea":["coffee","water","juice"]}"""
+        ).getFillBlank(
+            level = "A1",
+            limit = 20,
+            difficulty = PracticeDifficulty.EASY
+        )
+
+        assertTrue(exercises.isNotEmpty())
+        exercises.forEach { exercise ->
+            assertEquals(
+                "Expected one correct answer and three distractors",
+                4,
+                requireNotNull(exercise.options).size
+            )
+        }
+    }
+
+    private fun createApi(confusablesJson: String): LocalJsonExerciseApi {
         val context = mockk<Context>()
         val assets = mockk<AssetManager>()
         every { context.assets } returns assets
@@ -59,8 +122,6 @@ class LocalJsonExerciseApiTest {
             ]
         """.trimIndent()
 
-        val confusablesJson = """{"tea":["coffee","water","juice"]}"""
-
         every {
             assets.open("packs/restaurant_en_a1_b1_structured_v0_3.json")
         } returns sentencesJson.byteInputStream(StandardCharsets.UTF_8)
@@ -68,16 +129,6 @@ class LocalJsonExerciseApiTest {
             assets.open("packs/confusables_restaurant_en_v0_1.json")
         } returns confusablesJson.byteInputStream(StandardCharsets.UTF_8)
 
-        val api = LocalJsonExerciseApi(context, Gson())
-
-        val exercises = api.getFillBlank(
-            level = "A1",
-            limit = 20,
-            difficulty = PracticeDifficulty.EASY
-        )
-
-        assertTrue(exercises.isNotEmpty())
-        assertEquals(setOf("tea"), exercises.map { it.answer }.toSet())
-        assertTrue(exercises.all { it.mode == FillBlankMode.CHOICE })
+        return LocalJsonExerciseApi(context, Gson())
     }
 }
