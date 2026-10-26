@@ -76,7 +76,7 @@ class LocalJsonExerciseApi @Inject constructor(
             scrambleWord(exact)
         } else null
         return FillBlankExerciseDto(
-            exerciseId = "fb-${s.id}-$lemma-${mode.name.lowercase()}",
+            exerciseId = "fb-${s.id}-${lemma}-${mode.name.lowercase()}",
             mode = mode,
             level = s.level.orEmpty(),
             scenario = s.scenario.orEmpty(),
@@ -110,10 +110,11 @@ class LocalJsonExerciseApi @Inject constructor(
 
         val distractors = fromMap.take(3).toMutableList()
 
-        // fallback: از lemmaهای دیگر سناریو با طول نزدیک
+        // Fallback uses target vocabulary only; non-target mentions are not exercise candidates.
         if (distractors.size < 3) {
             val fallback = sentences
                 .flatMap { it.vocabMentions.orEmpty() }
+                .filter { it.isTarget }
                 .map { it.surface }
                 .filter { surface ->
                     surface.length in (correct.length - 2)..(correct.length + 3) &&
@@ -151,8 +152,7 @@ class LocalJsonExerciseApi @Inject constructor(
             context.assets.open("packs/confusables_restaurant_en_v0_1.json").use { input ->
                 val type = object : TypeToken<Map<String, List<String>>>() {}.type
                 gson.fromJson<Map<String, List<String>>>(
-                    InputStreamReader(input, Charsets.UTF_8),
-                    type
+                    InputStreamReader(input, Charsets.UTF_8), type
                 ).mapKeys { it.key.lowercase() }
             }
         } catch (e: Exception) {
