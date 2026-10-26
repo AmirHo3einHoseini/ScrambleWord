@@ -69,7 +69,7 @@ class LocalJsonExerciseApi @Inject constructor(
         val stem = text.substring(0, index) + "_______" + text.substring(index + surface.length)
         val lemma = m.lemma.ifBlank { exact }
         val option = if (mode == FillBlankMode.CHOICE) {
-            buildOptions(exact, lemma)
+            buildOptions(exact, lemma, m.language, m.cefrEstimate)
         } else null
 
         val scrambled = if (mode == FillBlankMode.SCRAMBLE) {
@@ -102,7 +102,7 @@ class LocalJsonExerciseApi @Inject constructor(
     }
 
 
-    private fun buildOptions(answer: String, lemma: String): List<String> {
+    private fun buildOptions(answer: String, lemma: String, language: String, cefr: String?): List<String> {
         val correct = answer.trim()
         val fromMap = confusables[lemma.lowercase()].orEmpty()
             .filter { !it.equals(correct, ignoreCase = true) }
@@ -110,11 +110,15 @@ class LocalJsonExerciseApi @Inject constructor(
 
         val distractors = fromMap.take(3).toMutableList()
 
-        // Fallback uses target vocabulary only; non-target mentions are not exercise candidates.
+        // Fallback uses target vocabulary from the same language and CEFR level when available.
         if (distractors.size < 3) {
             val fallback = sentences
                 .flatMap { it.vocabMentions.orEmpty() }
-                .filter { it.isTarget }
+                .filter { mention ->
+                    mention.isTarget &&
+                            mention.language.equals(language, ignoreCase = true) &&
+                            (cefr.isNullOrBlank() || mention.cefrEstimate.equals(cefr, ignoreCase = true))
+                }
                 .map { it.surface }
                 .filter { surface ->
                     surface.length in (correct.length - 2)..(correct.length + 3) &&
