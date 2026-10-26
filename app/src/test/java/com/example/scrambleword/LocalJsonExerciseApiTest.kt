@@ -11,6 +11,7 @@ import io.mockk.mockk
 import java.nio.charset.StandardCharsets
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
@@ -77,6 +78,25 @@ class LocalJsonExerciseApiTest {
                 "Expected one correct answer and three distractors",
                 4,
                 requireNotNull(exercise.options).size
+            )
+        }
+    }
+
+    @Test
+    fun choiceOptionsDoNotUseNonTargetVocabularyAsFallbackDistractors() = runBlocking {
+        val exercises = createApi(
+            confusablesJson = """{"tea":["coffee"]}"""
+        ).getFillBlank(
+            level = "A1",
+            limit = 20,
+            difficulty = PracticeDifficulty.EASY
+        )
+
+        assertTrue(exercises.isNotEmpty())
+        exercises.forEach { exercise ->
+            assertFalse(
+                "Non-target vocabulary 'please' must not be used as a distractor",
+                requireNotNull(exercise.options).any { it.equals("please", ignoreCase = true) }
             )
         }
     }
