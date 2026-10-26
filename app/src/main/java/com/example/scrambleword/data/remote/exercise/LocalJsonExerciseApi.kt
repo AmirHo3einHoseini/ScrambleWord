@@ -51,6 +51,7 @@ class LocalJsonExerciseApi @Inject constructor(
                     .filter { it.isTarget && it.surface.length >= 2 }
                     .mapNotNull { m -> toFillBlank(s, m, mode) }
             }
+            .distinctBy { it.exerciseId }
             .shuffled(Random.Default)
         return pool.take(limit)
     }
