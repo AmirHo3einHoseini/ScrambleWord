@@ -101,7 +101,25 @@ class LocalJsonExerciseApiTest {
         }
     }
 
-    private fun createApi(confusablesJson: String): LocalJsonExerciseApi {
+    @Test
+    fun fallbackDistractorsMatchAnswerLanguageAndCefrLevel() = runBlocking {
+        val exercises = createApi(
+            confusablesJson = """{"tea":["coffee"]}""",
+            extraTargetMentions = """
+                  ,
+                  {"surface":"Brot","lemma":"Brot","language":"de","pos":"noun","cefr_estimate":"A1","is_target":true},
+                  {"surface":"restaurant","lemma":"restaurant","language":"en","pos":"noun","cefr_estimate":"B2","is_target":true}
+            """.trimIndent()
+        ).getFillBlank(level = "A1", limit = 20, difficulty = PracticeDifficulty.EASY)
+
+        assertTrue(exercises.isNotEmpty())
+        exercises.forEach { exercise ->
+            val options = requireNotNull(exercise.options)
+            assertFalse("German vocabulary must not be used as an English distractor", options.any { it.equals("Brot", ignoreCase = true) })
+            assertFalse("Different-CEFR vocabulary must not be used as a fallback distractor", options.any { it.equals("restaurant", ignoreCase = true) })
+        }
+    }
+    private fun createApi(confusablesJson: String, extraTargetMentions: String = ""): LocalJsonExerciseApi {
         val context = mockk<Context>()
         val assets = mockk<AssetManager>()
         every { context.assets } returns assets
@@ -135,7 +153,7 @@ class LocalJsonExerciseApiTest {
                     "pos": "adverb",
                     "cefr_estimate": "A1",
                     "is_target": false
-                  }
+                  }$extraTargetMentions
                 ],
                 "grammar_mentions": []
               }
