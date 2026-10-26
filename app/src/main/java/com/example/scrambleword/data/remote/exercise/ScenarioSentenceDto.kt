@@ -8,6 +8,7 @@ data class ScenarioSentenceDto(
     val language: String,
     val level: String?,
     val step: Int,
+    @SerializedName("step_name")
     val stepName: String,
     val speaker: String,
     val function: String,
@@ -15,6 +16,7 @@ data class ScenarioSentenceDto(
     @SerializedName("translation_fa")
     val translationFa: String,
 
+    @SerializedName("next_id")
     val nextId: String? = null,
 
     @SerializedName("vocab_mentions")
